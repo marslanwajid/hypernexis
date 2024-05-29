@@ -1,0 +1,549 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.nav {
+    width: 100%;
+    position: relative;
+    z-index: 10;
+}
+.nav ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+ul li {
+    list-style: none;
+    color: whitesmoke;
+    font-weight: 500;
+}
+ul li a {
+    text-decoration: none;
+    color: whitesmoke;
+    border: 1px solid rgb(74, 57, 57);
+    border-radius: 20px;
+    backdrop-filter: blur(100px);
+    padding: 6px 12px;
+    background-color: rgba(128, 128, 128, 0.196);
+    transition: 0.3s;
+}
+
+
+
+.se1 img{
+    width: 100%;
+    opacity: 0.8;
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+   
+}
+.se1 ul {
+    width: 200px;
+    margin-top: 70px;
+    margin-left: 20px;
+}
+.se1 ul li {
+    margin-top: 5px;
+}
+.se1 ul li p {
+    color: whitesmoke;
+    /* border: 1px solid rgb(74, 57, 57); */
+    border-radius: 20px;
+    backdrop-filter: blur(100px);
+    padding: 6px 10px;
+    background-color: rgba(128, 128, 128, 0.196);
+    transition: 0.3s;
+    display: inline-block;
+    position: relative;
+    z-index: 10;
+}
+.con {
+    width: 500px;
+    position: absolute;
+    top: 150px;
+    right: 150px;
+}
+.con p {
+    width: 250px;
+    font-size: 1rem;
+    color: whitesmoke;
+    font-weight: 500;
+    margin-left: 200px;
+}
+.cont {
+    margin-top: 50px;
+    margin-left: -200px;
+    width: 100%;
+}
+.con h1 {
+    text-align: center;
+    color: whitesmoke;
+    width: 100%;
+    font-size: 4rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.con #h1 {
+    margin-left: 200px;
+    width: 100%;
+    text-align: center;
+}
+footer ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 40px;
+    margin-top: 150px;
+    position: relative;
+}
+.se1 ul li p:hover {
+    cursor: pointer;
+}
+.se2 {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease, visibility 1s ease;
+}
+.se2.show {
+    opacity: 1;
+    visibility: visible;
+    
+}
+.se2 h1 {
+    font-size: 2rem;
+    color: whitesmoke;
+    position: absolute;
+    top: 330px;
+    z-index: 2;
+    left: 250px;
+}
+.se2 .con1 p {
+    position: absolute;
+    top: 100px;
+    right: 200px;
+    z-index: 2;
+    color: whitesmoke;
+    width: 250px;
+}
+.se2 .img img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    filter: blur(3px);
+}
+.se2 .img-con {
+    position: absolute;
+    top: 250px;
+    z-index: 2;
+    right: 50px;
+}
+/* .img-con{
+    width: 0;
+    overflow: hidden; /* Hide the overflowing part */
+  /*  transition: width 1s;  Smooth transition 
+} */
+.se2 .img-con img {
+    height: 300px;
+    width: 250px;
+    border-radius: 20px;
+    margin-top: -180px;
+  
+ 
+}
+.se2 .img-con p {
+    margin-left: -200px;
+    color: whitesmoke;
+    width: 135px;
+    padding-top: 100px;
+}
+
+
+
+.se3 {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease, visibility 1s ease;
+}
+.se3.show {
+    opacity: 1;
+    visibility: visible;
+}
+.se3 h1 {
+    font-size: 3rem;
+    color: whitesmoke;
+    position: absolute;
+    top: 400px;
+    z-index: 2;
+    left: 400px;
+}
+.se3 .con2 p {
+    position: absolute;
+    top: 400px;
+    right: 100px;
+    z-index: 2;
+    color: whitesmoke;
+    width: 250px;
+}
+.se3 .img1 img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    z-index: 1;
+ 
+filter: blur(2px);
+}
+.se3 .img-con2 {
+    position: absolute;
+    top: 250px;
+    z-index: 2;
+    right: 50px;
+}
+.se3 .img-c img {
+  position: absolute;
+z-index: 2;
+height: 200px;
+width: 500px;
+top: 90px;
+margin-top: 100px;
+right: 100px;
+border-radius: 20px;
+}
+.se3 .img-con2 p {
+    margin-top: -150px;
+    margin-left: -850px;
+    color: whitesmoke;
+    width: 205px;
+    padding-top: 100px;
+    animation-name: para;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+ 
+}
+
+
+
+
+.se4 {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease, visibility 1s ease;
+}
+.se4.show {
+    opacity: 1;
+    visibility: visible;
+}
+.se4 h1 {
+    font-size: 3rem;
+    color: whitesmoke;
+    position: absolute;
+    top: 400px;
+    z-index: 2;
+    left: 700px;
+}
+.se4 .con3 p {
+    position: absolute;
+    top: 50px;
+    left: 300px;
+    z-index: 2;
+    color: whitesmoke;
+    width: 250px;
+   
+}
+.se4 .img2 img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    z-index: 1;
+ 
+filter: blur(2px);
+}
+.se4 .img-con3 {
+    position: absolute;
+    top: 250px;
+    z-index: 2;
+    right: 50px;
+}
+.se4 .img-c1 img {
+  position: absolute;
+z-index: 2;
+height: 330px;
+width: 300px;
+top: 180px;
+left: 250px;
+margin-left: 250px;
+border-radius: 20px;
+}
+.se4 .img-con3 p {
+    margin-top: -50px;
+    margin-left: -350px;
+    color: rgb(94, 74, 74);
+    font-weight: bold;
+    width: 205px;
+    padding-top: 100px;
+  
+ 
+}
+
+.se5{
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease, visibility 1s ease;
+}
+
+.se5.show {
+    opacity: 1;
+    visibility: visible;
+    
+}
+.se5 h1 {
+    font-size: 2rem;
+    color: whitesmoke;
+    position: absolute;
+    top: 330px;
+    z-index: 2;
+    left: 250px;
+}
+.se5 .con5 p {
+    position: absolute;
+    top: 100px;
+    right: 200px;
+    z-index: 2;
+    color: whitesmoke;
+    width: 250px;
+}
+.se5 .img5 img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    filter: blur(3px);
+}
+.se5 .img-con5 {
+    position: absolute;
+    top: 250px;
+    z-index: 2;
+    right: 50px;
+}
+/* .img-con{
+    width: 0;
+    overflow: hidden; /* Hide the overflowing part */
+  /*  transition: width 1s;  Smooth transition 
+} */
+.se5 .img-con5 img {
+    height: 300px;
+    width: 250px;
+    border-radius: 20px;
+    margin-top: -180px;
+  
+ 
+}
+.se5 .img-con5 p {
+    margin-left: -200px;
+    color: whitesmoke;
+    width: 135px;
+    padding-top: 100px;
+}
+
+
+
+
+
+
+.se6 {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease, visibility 1s ease;
+}
+.se6.show {
+    opacity: 1;
+    visibility: visible;
+}
+.se6 h1 {
+    font-size: 3rem;
+    color: whitesmoke;
+    position: absolute;
+    top: 400px;
+    z-index: 2;
+    left: 400px;
+}
+.se6 .con6 p {
+    position: absolute;
+    top: 400px;
+    right: 100px;
+    z-index: 2;
+    color: whitesmoke;
+    width: 250px;
+}
+.se6 .img6 img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    z-index: 1;
+ 
+filter: blur(2px);
+}
+.se6 .img-con6 {
+    position: absolute;
+    top: 250px;
+    z-index: 2;
+    right: 50px;
+}
+.se6 .img-c6 img {
+  position: absolute;
+z-index: 2;
+height: 200px;
+width: 500px;
+margin-top: 100px;
+top: 100px;
+right: 100px;
+border-radius: 20px;
+}
+.se6 .img-con6 p {
+    margin-top: -150px;
+    margin-left: -850px;
+    color: whitesmoke;
+    width: 205px;
+    padding-top: 100px;
+    animation-name: para;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+ 
+}
+
+.se7 {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease, visibility 1s ease;
+}
+.se7.show {
+    opacity: 1;
+    visibility: visible;
+} 
+.se7 h1 {
+    font-size: 4rem;
+    color: whitesmoke;
+    position: absolute;
+    top: 300px;
+    z-index: 2;
+    left: 900px;
+    letter-spacing: 1px;
+}
+.se7 .con7 p {
+    position: absolute;
+    top: 100px;
+    left: 300px;
+    z-index: 2;
+    color: whitesmoke;
+    width: 250px;
+   
+}
+.se7 .img7 img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    z-index: 1;
+ 
+filter: blur(2px);
+}
+.se7 .img-con7 {
+    position: absolute;
+    top: 250px;
+    z-index: 2;
+    right: 50px;
+}
+.se7 .img-c7 img {
+  position: absolute;
+z-index: 2;
+height: 330px;
+width: 500px;
+top: 180px;
+left: 50px;
+margin-left: 200px;
+border-radius: 20px;
+margin-top: 150px;
+}
+
+
+
+
+@media only screen and (max-width:768px) {
+    img {
+        height: 100vh;
+    }
+    .con p {
+        display: none;
+    }
+    .con h1 {
+        font-size: 2rem;
+        line-height: 1.4;
+        position: relative;
+        top: -100px;
+        left: 160px;
+        width: 200px;
+    }
+    .con #h1 {
+        margin-left: 50px;
+    }
+    footer ul {
+        margin-top: 0;
+        padding: 33px 40px;
+        font-size: 1rem;
+    }
+    .se1 ul {
+        margin-top: 50px;
+    }
+}
+
+
+@media only screen and (max-width:930px) {
+    .cont h1 {
+        margin-left: 200px;
+    }
+}
+
+@media only screen and (max-width:450px) {
+    .cont h1 {
+        display: none;
+    }
+    .se1 ul li p {
+        font-size: .6rem;
+        letter-spacing: 1px;
+    }
+    ul li a {
+        font-size: .6rem;
+        letter-spacing: 1px;
+    }
+    .nav ul {
+        padding: 20px 20px;
+    }
+    footer ul {
+        padding: 33px 20px;
+        margin-top: 40px;
+    }
+}
